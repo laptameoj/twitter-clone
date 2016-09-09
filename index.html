@@ -19,7 +19,7 @@
 
 					<!-- STEP 2: When the user clicks on the textarea, the textarea should double in size and the character count and Tweet buttons should be revealed. -->
 					<!-- HINT: jQuery ".on" eventHandler -->
-					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
+					<textarea id="composer" class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
 
 					<!-- STEP 1: Initially, the Tweet button and the character count button below should be hidden. -->
 					<!-- HINT: Use CSS -->
@@ -27,7 +27,9 @@
 
 						<!-- STEP 3: As the user types the character count should decrease. Once it hits 10 character or less the count should turn red -->
 						<!-- HINT: jQuery keypress events (keypress, keydown, keyup, etc) -->
-						<div id="char-count">140</div>
+						<div id="char-count">
+
+						</div>
 
 						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
 						<!-- HINT: javascript length method -->
@@ -178,5 +180,8 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+
+		<script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+		<script src="js/animation.js"></script>
 	</body>
 </html>
